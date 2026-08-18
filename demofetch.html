@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const url = "https://dummyjson.com/products/1"
+        async function loadProduct() {
+            try {
+                const res = await fetch(url);
+                const data = await res.json(res);
+                console.log("data=",data);
+                data.products.map((i)=>{
+                    ele.innerHTML=<tr>
+                        <td>${i.title}<td>
+                            <
+                })
+            } catch (error) {
+                console.log("error:", error);
+            }
+        }
+        loadProduct();
+    </script>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Sno</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>rating</th>
+            </tr>
+        </thead>
+    </table>
+
+</body>
+
+</html>
