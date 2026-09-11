@@ -1,0 +1,11 @@
+.itemh2{
+  width:400px;
+  height:400px;
+  background-color: bisque;
+  border: red;
+  background-color:wheat;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
